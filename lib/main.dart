@@ -1,6 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors
 
 import 'package:firstapp/pages/home_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:firstapp/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
@@ -12,10 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       //Apply for dark theme and light theme in flutter
       themeMode: ThemeMode.light,
-      theme: ThemeData(primarySwatch: Colors.purple),
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
+      theme: ThemeData(primarySwatch: Colors.green, fontFamily: GoogleFonts.lato().fontFamily
       ),
+      // initialRoute: "/home",
       routes: {
         "/": (context) => LoginPage(),
         "/home": (context) => HomePage(),

@@ -11,7 +11,12 @@ class HomePage extends StatelessWidget {
       ),
       body: Container(
         child: const Center(
-          child: Text("Maniruddin Khan"),
+          child: Text(
+            "Maniruddin Khan",
+            style: TextStyle(
+              fontSize: 30,color: Colors.black,
+            ),
+          ),
         ),
       ),
       drawer: const Drawer(
